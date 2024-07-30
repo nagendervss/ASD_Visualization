@@ -10,3 +10,11 @@ conda activate asd_visualization
 pip install -r requirements.txt --no-cache-dir
 conda install conda-forge::ffmpeg
 ```
+
+Run the following command to generate visualization
+
+```
+python visualizer.py --csv_file_path /path/to/val_res.csv --source_video_path /path/to/source/video_id.mp4
+```
+
+The above command will generate the videos `video_id_marked.mp4` and `video_id_marked_with_audio.mp4` in the folder `/path/to/source/`
